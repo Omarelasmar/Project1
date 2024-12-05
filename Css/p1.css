@@ -1,0 +1,1425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(101, 101, 245, 0.6);
+    position: relative;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.house {
+    position: relative;
+    /* Move the icon down independently */
+    top: 15px;
+    /* Move it down by 5px from its normal position */
+    margin-left: 40px;
+    font-size: 25px;
+    color: white;
+}
+
+.search-container {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.search-container input[type="text"] {
+    padding-left: 50px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.search {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+
+}
+
+
+.list {
+    float: right;
+    margin-right: 70px;
+    list-style: none;
+}
+
+.list li {
+    display: inline-block;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.list li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
+
+/*     ---------------------------------------------------------------------------- */
+
+
+.Creative {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-leah-newhouse-50725-3935702.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.Creative-Overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.Creative-Content {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.Creative-Content h2 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.Creative-Content p {
+    color: white;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+
+.Creative-content .home-btn {
+    width: 145px;
+    height: 40px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 17px;
+
+}
+
+.home-btn2 {
+    background-color: rgb(101, 101, 245);
+    margin-left: 10px;
+}
+
+.Creative-content .home-btn:hover {
+    opacity: 0.5;
+}
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+.Welcome {
+    width: 100%;
+    height: 100vh;
+}
+
+.Welcome .main {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.line {
+    margin: auto;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(101, 101, 245);
+    margin-top: 10px;
+}
+
+.tours div {
+    width: 350px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 150px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.tours div i {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(108, 108, 211);
+}
+
+.tours div h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.tours div p {
+    color: rgb(109, 108, 108);
+    font-weight: 700;
+}
+
+.tours div::after {
+
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    transition: 1s;
+
+}
+
+.tours div:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+.featured {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(232, 234, 248);
+    position: relative;
+}
+
+.featured .divs {
+    width: 300px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.featured .Divdata {
+    top: 10%;
+    left: 30%;
+    visibility: hidden;
+    position: absolute;
+}
+
+.featured h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.featured .div1 {
+
+    margin-left: 300px;
+
+
+}
+
+.featured .div2 {
+
+    margin-left: 30px;
+
+
+}
+
+.featured .div3 {
+    margin-left: 30px;
+
+}
+
+
+.featured .div4 {
+    margin-left: 300px;
+
+}
+
+
+.featured .div5 {
+    margin-left: 30px;
+}
+
+.featured .div6 {
+    margin-left: 30px;
+}
+
+.Country {
+    color: rgb(181, 181, 184);
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.desc {
+    padding-top: 20px;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.icons i {
+    padding: 7px;
+    font-size: 25;
+    background-color: #fff;
+    color: #ccc;
+    border-radius: 5px;
+
+}
+
+.divs:hover img {
+    opacity: 0.3;
+    /* Reduce opacity on hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(101, 101, 245, 0.6);
+    position: relative;
+    position: fixed;
+    z-index: 1000;
+
+}
+
+.house {
+    position: relative;
+    /* Move the icon down independently */
+    top: 15px;
+    /* Move it down by 5px from its normal position */
+    margin-left: 40px;
+    font-size: 25px;
+    color: white;
+}
+
+.search-container {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.search-container input[type="text"] {
+    padding-left: 50px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.search {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+
+}
+
+
+.list {
+    float: right;
+    margin-right: 70px;
+    list-style: none;
+}
+
+.list li {
+    display: inline-block;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.list li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+
+}
+
+
+
+/*     ---------------------------------------------------------------------------- */
+
+
+.Creative {
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/pexels-leah-newhouse-50725-3935702.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.Creative-Overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.Creative-Content {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.Creative-Content h2 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.Creative-Content p {
+    color: white;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+    font-size: 20px;
+
+}
+
+.Creative-content .home-btn {
+    width: 145px;
+    height: 40px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 17px;
+
+}
+
+.home-btn2 {
+    background-color: rgb(101, 101, 245);
+    margin-left: 10px;
+}
+
+.Creative-content .home-btn:hover {
+    opacity: 0.5;
+}
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+.Welcome {
+    width: 100%;
+    height: 100vh;
+}
+
+.Welcome .main {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.line {
+    margin: auto;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(101, 101, 245);
+    margin-top: 10px;
+}
+
+.tours div {
+    width: 350px;
+    height: 250px;
+    margin-left: 150px;
+    margin-top: 150px;
+    border: 1px solid black;
+    float: left;
+    text-align: center;
+    position: relative;
+
+
+}
+
+.tours div i {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(108, 108, 211);
+}
+
+.tours div h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.tours div p {
+    color: rgb(109, 108, 108);
+    font-weight: 700;
+}
+
+.tours div::after {
+
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    transition: 1s;
+
+}
+
+.tours div:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+.featured {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(232, 234, 248);
+    position: relative;
+}
+
+.featured .divs {
+    width: 300px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.featured .Divdata {
+    top: 10%;
+    left: 30%;
+    visibility: hidden;
+    position: absolute;
+}
+
+.featured .Div4data {
+    left: 10%;
+}
+
+.featured h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.featured .div1 {
+
+    margin-left: 300px;
+
+
+}
+
+.featured .div4 {
+    margin-left: 300px;
+
+}
+
+.Country {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.desc {
+    padding-top: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.icons i {
+    padding: 7px;
+    font-size: 25px;
+    background-color: #fff;
+    color: #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons i:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+.divs:hover img {
+    filter: brightness(40%);
+    transform: scale(1.05);
+    /* Optional: Add a subtle zoom effect */
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.divs:hover .Divdata {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: visibility 0.3s, opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+
+.offer {
+    width: 100%;
+    height: 100vh;
+}
+
+.offer h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.offer .container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.offers div {
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid rgb(108, 108, 214);
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.offers .offer2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.offers .offer5 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.offers i {
+    float: left;
+    font-size: 30px;
+    color: rgb(99, 99, 216);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.offers h3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.offers p {
+    color: rgb(170, 165, 165);
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.offers div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    transition: 1s;
+
+}
+
+.offers div:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.offers div:hover p {
+    color: black;
+    z-index: 100;
+}
+
+.offers div:hover h3 {
+    color: rgb(99, 99, 216);
+    z-index: 100;
+}
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+
+
+.choose {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 200px;
+}
+
+.Container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    /* Added for better layout debugging */
+}
+
+
+
+.choose h1 {
+    padding-top: 200px;
+}
+
+.cLine {
+    width: 75px;
+    height: 4px;
+    background-color: rgb(101, 101, 245);
+    margin-top: 10px;
+}
+
+.details {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.FirstPara {
+    color: rgb(178, 178, 180);
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.details p:not(:first-of-type) {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.details i {
+    color: rgb(101, 101, 245);
+}
+
+.chooseImg {
+    margin-top: 150px;
+    float: right;
+    width: 40%;
+    text-align: center;
+
+}
+
+.chooseImg img {
+
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bullet {
+    text-align: center;
+    list-style: none;
+
+}
+
+.bullet li {
+    margin: 10px 5px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(174, 174, 175);
+}
+
+.bullet .active {
+    background-color: rgb(101, 101, 245);
+}
+
+
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+.firstImg {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-element5-1051075.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 200px;
+}
+
+.first-Overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.first-Container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.firstDivs div {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.first-items i {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    color: rgb(101, 101, 245);
+    z-index: 1000;
+}
+
+.first-items h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+
+.pricing {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.pricing h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.pline {
+    margin: auto;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(101, 101, 245);
+    margin-top: 10px;
+}
+
+.pricing .Container {
+    margin: auto;
+    height: 100%;
+    width: 80%;
+}
+
+
+.pricingDivs .p1,
+.p2,
+.p3 {
+    margin-top: 100px;
+    width: 25%;
+    height: 400px;
+    border: 1px solid rgb(135, 135, 230);
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+
+}
+
+.pricingDivs .p2 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.pricingDivs .p1 {
+    margin-left: 100px;
+}
+
+.dollar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(135, 135, 230);
+    margin: 20px auto;
+    padding: 12px 0;
+}
+
+.dollar h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.pricingDivs .hs,
+.ht,
+.hf {
+    padding-bottom: 20px;
+}
+
+.pricingDivs .hfirst {
+    padding-top: 20px;
+}
+
+.pricingDivs button {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+
+    border: 2px solid rgb(135, 135, 230);
+    font-size: 16px;
+}
+
+.pricingDivs .p1,
+.pricingDivs .p2,
+.pricingDivs .p3 {
+    position: relative;
+}
+
+.pricingDivs .p1::after,
+.pricingDivs .p2::after,
+.pricingDivs .p3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0%;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    transition: 1s;
+    z-index: -1;
+    border-radius: 10px;
+
+}
+
+
+.pricingDivs .p1:hover::after,
+.pricingDivs .p2:hover::after,
+.pricingDivs .p3:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+.secondImg {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/pexels-ninauhlikova-725255.jpg);
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 200px;
+}
+
+.second-Overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.second-Container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.Second-Divs {
+    z-index: 1000;
+}
+
+.Second-Divs .item1,
+.item2 {
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin-left: 100px;
+
+}
+
+.Second-Divs img {
+    float: left;
+    /* Make the image float to the left */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    /* Add spacing between the image and text */
+    margin-top: 50px;
+}
+
+.Second-Divs h2 {
+    font-size: 30px;
+    color: white;
+    padding-top: 20px;
+    margin-top: 60px;
+
+}
+
+.Second-Divs h3 {
+    padding-top: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.Second-Divs p {
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+
+
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+
+
+.team {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.team-Container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+}
+
+.team h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.team-line {
+    margin: auto;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(101, 101, 245);
+    margin-top: 10px;
+}
+
+.teamDivs .t1,
+.t2,
+.t3 {
+    width: 350px;
+    height: 350px;
+    float: left;
+    background-color: gainsboro;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.teamDivs div h3 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.teamDivs div p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #555;
+
+}
+
+.teamDivs .images {
+    width: 250px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.teamDivs div img {
+    width: 250px;
+    height: 200px;
+
+
+}
+
+.teamDivs .teamIcons {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+
+}
+
+.teamIcons a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #fff;
+    background-color: rgb(101, 101, 236);
+    margin-left: auto;
+}
+
+.teamIcons i {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.teamDivs .t1::after,
+.teamDivs .t2::after,
+.teamDivs .t3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0%;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    transition: 1s;
+
+}
+
+.teamDivs .t1:hover::after,
+.teamDivs .t2:hover::after,
+.teamDivs .t3:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.teamDivs .t1:hover .teamIcons,
+.teamDivs .t2:hover .teamIcons,
+.teamDivs .t3:hover .teamIcons {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+
+.teamDivs .t1:hover p,
+.teamDivs .t2:hover p,
+.teamDivs .t3:hover p {
+    color: rgb(101, 101, 236);
+}
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+.recent {
+    width: 100%;
+    height: 100vh;
+}
+
+.recent-Container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+.recent h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.recent .recentline {
+    margin: auto;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(101, 101, 245);
+    margin-top: 10px;
+}
+
+.recentdivs .r1,
+.r2,
+.r3 {
+    width: 400px;
+    height: 500px;
+    float: left;
+    border: 1px solid rgb(101, 101, 245);
+    margin-left: 70px;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.recentdivs .r2 {
+    height: 520px;
+
+}
+
+.recentdivs .rimages {
+
+    width: 250px;
+    height: 250px;
+    margin-left: 70px;
+    margin-top: 20px;
+
+}
+
+.recentdivs .rimages img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.recentdivs .ricons {
+    margin-left: 80px;
+    padding-top: 20px;
+
+}
+
+.recentdivs .ricons a {
+    text-decoration: none;
+}
+
+.recentdivs .ricons i {
+    display: inline;
+    padding-left: 10px;
+    color: rgb(101, 101, 236);
+    font-size: 20px;
+}
+
+.recentdivs .ricons p {
+    display: inline;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.recentdivs h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.recentdivs .rdata p {
+    padding: 0 10;
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+    font-weight: 800;
+}
+
+.recentdivs .rdata button {
+    width: 120px;
+    height: 40px;
+    margin-left: 150px;
+    background-color: rgb(101, 101, 236);
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.recentdivs .r1::after,
+.recentdivs .r2::after,
+.recentdivs .r3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0%;
+    left: 0;
+    background-color: rgb(202, 201, 240);
+    transition: 1s;
+    z-index: -1;
+
+}
+
+.recentdivs .r1:hover::after,
+.recentdivs .r2:hover::after,
+.recentdivs .r3:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    transition: 1s;
+
+}
+
+.recentdivs .r1:hover h3,
+.recentdivs .r2:hover h3,
+.recentdivs .r3:hover h3 {
+    color: whitesmoke;
+    z-index: 1000;
+    opacity: 1;
+    font-weight: 900;
+}
+
+
+
+/*  -------------------------------------------------------------------------------------- */
+
+
+
+
+.footer {
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    background-color: #d1d3f0;
+}
+
+.footer-Container {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+
+.footer-data {
+    text-align: center;
+}
+
+.footer-data img {
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.ul-Footer ul {
+    padding-top: 10px;
+    list-style: none;
+
+}
+
+.ul-Footer ul li {
+
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #9198f7;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 11px;
+    position: relative;
+}
+
+.ul-Footer ul li:hover {
+    background-color: blue;
+}
+
+.footer-data p {
+    padding-top: 10px;
+    color: grey;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
